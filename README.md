@@ -50,8 +50,7 @@ Example Playbook : ~/ansible/playbooks/test.yml<br/>
 <pre>
 ---
 - hosts: all
-  become: true
-
+  become: true 
   roles:
     - docker
 </pre>
