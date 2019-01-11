@@ -1,5 +1,5 @@
 # docker18.09.1
-This ansible role will install Docker version 18.09.1, build 4c52b90 and setup docker users on Centos, Redhat and Fedora.<br/>
+This ansible role will install Docker version 18.09.1, build 4c52b90 Docker Compose and setup docker users on Centos, Redhat and Fedora.<br/>
 <br/>
 Requirements<br/>
 ansible installation<br/>
