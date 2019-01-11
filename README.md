@@ -1,10 +1,10 @@
 # docker18.09.1
-This ansible role will install Docker version 18.09.1, build 4c52b90 and setup docker users on Centos, Redhat and Fedora.
-
+This ansible role will install Docker version 18.09.1, build 4c52b90 and setup docker users on Centos, Redhat and Fedora.<br/>
+<br/>
 Requirements<br/>
 ansible installation<br/>
 <br/>
-Role Variables<br/>
+Role Variables
 <br/>
 Available variables are listed below, along with variables <br/>
 vars/main.yml<br/>
@@ -28,30 +28,29 @@ docker_compose_path: /usr/local/bin/docker-compose<br/>
 <br/>
 Docker Compose installation options.<br/>
 <br/>
-(Used only for RedHat/CentOS.) You can enable the Edge or Test repo by setting the respective vars to 1.<br/>
+(Used only for RedHat/CentOS.) You can enable the Edge or Test repo by setting the respective vars to 1.<br/><br/>
 docker_yum_repo_url: https://download.docker.com/linux/{{ (ansible_distribution == "Fedora") | ternary("fedora","centos") }}/docker-{{ docker_edition }}.repo<br/>
+<br/>
 docker_yum_repo_enable_edge: 0<br/>
 docker_yum_repo_enable_test: 0<br/>
 <br/>
 A list of system users to be added to the docker group (so they can use Docker on the server).<br/>
 docker_users:<br/>
 <pre>
-  - user1<br/>
-  - user2<br/>
-<br/>
+  - user1
+  - user2
 </pre>
 Dependencies<br/>
 Example Playbook : ~/ansible/playbooks/test.yml<br/>
-<br/>
 <pre>
----<br/>
-- hosts: all<br/>
-  become: true<br/>
-<br/>
-  roles:<br/>
-    - docker<br/>
-<br/>
+---
+- hosts: all
+  become: true
+
+  roles:
+    - docker
+
 </pre>
-License<br/>
+License
 <br/>
-MIT / BSD<br/>
+MIT / BSD
