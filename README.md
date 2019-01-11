@@ -51,6 +51,14 @@ Example Playbook : ~/ansible/playbooks/test.yml<br/>
     - docker
 
 </pre>
+Test the role<br/>
+Dependencies<br/>
+Vagrant installed<br/>
+vagrant up<br/>
+<br/>
+<pre>
 License
+Example Playbook : ~/ansible/playbooks/test.yml<br/>
+<icense
 <br/>
 MIT / BSD
