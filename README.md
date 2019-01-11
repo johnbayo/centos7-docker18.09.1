@@ -9,7 +9,7 @@ Role Variables<br/>
 Available variables are listed below, along with variables <br/>
 vars/main.yml<br/>
 <br/>
-# Edition can be one of: 'ce' (Community Edition) or 'ee' (Enterprise Edition).<br/>
+### Edition can be one of: 'ce' (Community Edition) or 'ee' (Enterprise Edition).<br/>
 docker_edition: 'ce'<br/>
 docker_package: "docker-{{ docker_edition }}"<br/>
 docker_package_state: present<br/>
@@ -35,12 +35,15 @@ docker_yum_repo_enable_test: 0<br/>
 <br/>
 A list of system users to be added to the docker group (so they can use Docker on the server).<br/>
 docker_users:<br/>
+<pre>
   - user1<br/>
   - user2<br/>
 <br/>
+</pre>
 Dependencies<br/>
 Example Playbook : ~/ansible/playbooks/test.yml<br/>
 <br/>
+<pre>
 ---<br/>
 - hosts: all<br/>
   become: true<br/>
@@ -48,6 +51,7 @@ Example Playbook : ~/ansible/playbooks/test.yml<br/>
   roles:<br/>
     - docker<br/>
 <br/>
+</pre>
 License<br/>
 <br/>
 MIT / BSD<br/>
