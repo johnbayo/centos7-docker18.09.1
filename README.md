@@ -1,4 +1,4 @@
-# docker18.09.1
+# docker
 This ansible role will install the latest Docker version, Docker Compose and setup docker users on Centos, Redhat and Fedora.<br/>
 <br/>
 Requirements<br/>
